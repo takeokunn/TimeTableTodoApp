@@ -7,9 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C119C5023F0416200016E89 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C119C4F23F0416200016E89 /* APIKit.framework */; };
+		5C119C5123F0416200016E89 /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C119C4F23F0416200016E89 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C119C5323F0418300016E89 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C119C4F23F0416200016E89 /* APIKit.framework */; };
+		5C119C5A23F0418300016E89 /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C119C5423F0418300016E89 /* SwiftDate.framework */; };
+		5C119C5B23F0418300016E89 /* SwiftDate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C119C5423F0418300016E89 /* SwiftDate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C119C5C23F0418300016E89 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C119C5523F0418300016E89 /* CocoaLumberjackSwift.framework */; };
+		5C119C5D23F0418300016E89 /* CocoaLumberjackSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C119C5523F0418300016E89 /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C119C5E23F0418300016E89 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C119C5623F0418300016E89 /* Himotoki.framework */; };
+		5C119C5F23F0418300016E89 /* Himotoki.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C119C5623F0418300016E89 /* Himotoki.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C119C6023F0418300016E89 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C119C5723F0418300016E89 /* SVProgressHUD.framework */; };
+		5C119C6123F0418300016E89 /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C119C5723F0418300016E89 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C119C6223F0418300016E89 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C119C5823F0418300016E89 /* CocoaLumberjack.framework */; };
+		5C119C6323F0418300016E89 /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C119C5823F0418300016E89 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C119C6423F0418300016E89 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C119C5923F0418300016E89 /* KeychainAccess.framework */; };
+		5C119C6523F0418300016E89 /* KeychainAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C119C5923F0418300016E89 /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5C2D967823F0080900352EDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D967723F0080900352EDC /* AppDelegate.swift */; };
 		5C2D967A23F0080900352EDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D967923F0080900352EDC /* SceneDelegate.swift */; };
-		5C2D967C23F0080900352EDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D967B23F0080900352EDC /* ViewController.swift */; };
 		5C2D967F23F0080900352EDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2D967D23F0080900352EDC /* Main.storyboard */; };
 		5C2D968123F0080A00352EDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2D968023F0080A00352EDC /* Assets.xcassets */; };
 		5C2D968423F0080A00352EDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2D968223F0080A00352EDC /* LaunchScreen.storyboard */; };
@@ -24,6 +38,7 @@
 		5C5F751F23F03BD7000B06BB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F751E23F03BD7000B06BB /* SettingsViewController.swift */; };
 		5C5F752123F03BE7000B06BB /* Todo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C5F752023F03BE7000B06BB /* Todo.storyboard */; };
 		5C5F752323F03C06000B06BB /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F752223F03C06000B06BB /* TodoViewController.swift */; };
+		5CD75B0623F050C000D656D7 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD75B0523F050C000D656D7 /* AddViewController.swift */; };
 		93A05D4391D68E5AFC04A6C6 /* Pods_TimeTableTodoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F0363BD46E2518D5BDADDC /* Pods_TimeTableTodoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,12 +59,38 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5C119C5223F0416200016E89 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5C119C5B23F0418300016E89 /* SwiftDate.framework in Embed Frameworks */,
+				5C119C6123F0418300016E89 /* SVProgressHUD.framework in Embed Frameworks */,
+				5C119C5123F0416200016E89 /* APIKit.framework in Embed Frameworks */,
+				5C119C6523F0418300016E89 /* KeychainAccess.framework in Embed Frameworks */,
+				5C119C5F23F0418300016E89 /* Himotoki.framework in Embed Frameworks */,
+				5C119C6323F0418300016E89 /* CocoaLumberjack.framework in Embed Frameworks */,
+				5C119C5D23F0418300016E89 /* CocoaLumberjackSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		22F0363BD46E2518D5BDADDC /* Pods_TimeTableTodoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeTableTodoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C119C4F23F0416200016E89 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		5C119C5423F0418300016E89 /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDate.framework; path = Carthage/Build/iOS/SwiftDate.framework; sourceTree = "<group>"; };
+		5C119C5523F0418300016E89 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		5C119C5623F0418300016E89 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
+		5C119C5723F0418300016E89 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		5C119C5823F0418300016E89 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		5C119C5923F0418300016E89 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 		5C2D967423F0080900352EDC /* TimeTableTodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTableTodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2D967723F0080900352EDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C2D967923F0080900352EDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5C2D967B23F0080900352EDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C2D967E23F0080900352EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C2D968023F0080A00352EDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C2D968323F0080A00352EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +110,7 @@
 		5C5F751E23F03BD7000B06BB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5C5F752023F03BE7000B06BB /* Todo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Todo.storyboard; sourceTree = "<group>"; };
 		5C5F752223F03C06000B06BB /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		5CD75B0523F050C000D656D7 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		845A265334E96DFA2A0752E4 /* Pods-TimeTableTodoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTableTodoApp.release.xcconfig"; path = "Target Support Files/Pods-TimeTableTodoApp/Pods-TimeTableTodoApp.release.xcconfig"; sourceTree = "<group>"; };
 		A584DD2D6CB61FA6D69D7AB2 /* Pods-TimeTableTodoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTableTodoApp.debug.xcconfig"; path = "Target Support Files/Pods-TimeTableTodoApp/Pods-TimeTableTodoApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +120,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C119C6023F0418300016E89 /* SVProgressHUD.framework in Frameworks */,
+				5C119C5323F0418300016E89 /* APIKit.framework in Frameworks */,
+				5C119C6223F0418300016E89 /* CocoaLumberjack.framework in Frameworks */,
+				5C119C5023F0416200016E89 /* APIKit.framework in Frameworks */,
+				5C119C5E23F0418300016E89 /* Himotoki.framework in Frameworks */,
+				5C119C5A23F0418300016E89 /* SwiftDate.framework in Frameworks */,
+				5C119C6423F0418300016E89 /* KeychainAccess.framework in Frameworks */,
 				93A05D4391D68E5AFC04A6C6 /* Pods_TimeTableTodoApp.framework in Frameworks */,
+				5C119C5C23F0418300016E89 /* CocoaLumberjackSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +181,6 @@
 				5C5F750823F03822000B06BB /* ViewController */,
 				5C2D968023F0080A00352EDC /* Assets.xcassets */,
 				5C2D968223F0080A00352EDC /* LaunchScreen.storyboard */,
-				5C2D967B23F0080900352EDC /* ViewController.swift */,
 				5C2D967D23F0080900352EDC /* Main.storyboard */,
 				5C2D968523F0080A00352EDC /* Info.plist */,
 			);
@@ -159,8 +208,8 @@
 		5C5F750823F03822000B06BB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5C5F751523F03A7B000B06BB /* Settings */,
 				5C5F751423F03A6F000B06BB /* Login */,
+				5C5F751523F03A7B000B06BB /* Settings */,
 				5C5F751323F03A66000B06BB /* Todo */,
 			);
 			path = ViewController;
@@ -204,6 +253,7 @@
 			children = (
 				5C5F752023F03BE7000B06BB /* Todo.storyboard */,
 				5C5F752223F03C06000B06BB /* TodoViewController.swift */,
+				5CD75B0523F050C000D656D7 /* AddViewController.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -229,6 +279,13 @@
 		7274852EB21A1755D696C1CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5C119C5823F0418300016E89 /* CocoaLumberjack.framework */,
+				5C119C5523F0418300016E89 /* CocoaLumberjackSwift.framework */,
+				5C119C5623F0418300016E89 /* Himotoki.framework */,
+				5C119C5923F0418300016E89 /* KeychainAccess.framework */,
+				5C119C5723F0418300016E89 /* SVProgressHUD.framework */,
+				5C119C5423F0418300016E89 /* SwiftDate.framework */,
+				5C119C4F23F0416200016E89 /* APIKit.framework */,
 				22F0363BD46E2518D5BDADDC /* Pods_TimeTableTodoApp.framework */,
 			);
 			name = Frameworks;
@@ -255,6 +312,7 @@
 				5C2D967123F0080900352EDC /* Frameworks */,
 				5C2D967223F0080900352EDC /* Resources */,
 				B5EFE70106B261A7FB71F6BE /* [CP] Embed Pods Frameworks */,
+				5C119C5223F0416200016E89 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -423,7 +481,7 @@
 			files = (
 				5C5F751B23F03BB0000B06BB /* LoginViewController.swift in Sources */,
 				5C5F752323F03C06000B06BB /* TodoViewController.swift in Sources */,
-				5C2D967C23F0080900352EDC /* ViewController.swift in Sources */,
+				5CD75B0623F050C000D656D7 /* AddViewController.swift in Sources */,
 				5C2D967823F0080900352EDC /* AppDelegate.swift in Sources */,
 				5C5F751223F039CE000B06BB /* Date+String.swift in Sources */,
 				5C5F751023F0399B000B06BB /* CommonModel.swift in Sources */,
@@ -604,6 +662,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TimeTableTodoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -622,6 +684,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TimeTableTodoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

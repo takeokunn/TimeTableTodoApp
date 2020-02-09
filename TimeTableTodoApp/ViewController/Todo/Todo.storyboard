@@ -1,7 +1,168 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pMf-1y-kDU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <customFonts key="customFonts">
+        <array key="yugothib.ttf">
+            <string>YuGothic-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Todo-->
+        <scene sceneID="asr-GE-Oz7">
+            <objects>
+                <tableViewController id="0Zq-MX-DdG" customClass="TodoViewController" customModule="TimeTableTodoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="cCc-v7-lHy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TodoCell" id="h7Z-BF-IZB">
+                                <rect key="frame" x="20" y="55.5" width="374" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h7Z-BF-IZB" id="mWM-tB-0Pb">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d77-VJ-bXX">
+                                            <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0Zq-MX-DdG" id="FqJ-3a-clw"/>
+                            <outlet property="delegate" destination="0Zq-MX-DdG" id="Oqm-er-diR"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Todo" image="folder" catalog="system" id="w4E-xP-J7d"/>
+                    <navigationItem key="navigationItem" title="Todo" id="j1l-Xw-DpF">
+                        <barButtonItem key="rightBarButtonItem" title="追加" id="Dmh-YW-eYe">
+                            <connections>
+                                <segue destination="05f-pd-uF8" kind="show" id="Ub5-rM-eYp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GHQ-KN-ag9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="135"/>
+        </scene>
+        <!--追加-->
+        <scene sceneID="7ay-Dy-iHu">
+            <objects>
+                <tableViewController id="05f-pd-uF8" customClass="AddViewController" customModule="TimeTableTodoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Gsi-6N-woO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="追加" id="1qi-Gj-9cH">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="50" id="gTi-kc-HQL">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gTi-kc-HQL" id="gx7-Oq-Q5N">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kGm-54-9ZL">
+                                                    <rect key="frame" x="62" y="17" width="324" height="16"/>
+                                                    <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="13"/>
+                                                    <textInputTraits key="textInputTraits" textContentType="location"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28P-e4-x25">
+                                                    <rect key="frame" x="20" y="17" width="26" height="16"/>
+                                                    <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="13"/>
+                                                    <color key="textColor" red="0.039215686270000001" green="0.058823529409999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="kGm-54-9ZL" secondAttribute="trailing" constant="8" id="7mm-IE-b3u"/>
+                                                <constraint firstItem="kGm-54-9ZL" firstAttribute="leading" secondItem="28P-e4-x25" secondAttribute="trailing" constant="16" id="Css-iU-wOs"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="kGm-54-9ZL" secondAttribute="bottom" constant="6" id="Mhg-dk-W8m"/>
+                                                <constraint firstItem="kGm-54-9ZL" firstAttribute="top" secondItem="gx7-Oq-Q5N" secondAttribute="topMargin" constant="6" id="P8G-WA-Uz5"/>
+                                                <constraint firstItem="28P-e4-x25" firstAttribute="top" secondItem="gx7-Oq-Q5N" secondAttribute="topMargin" constant="6" id="PxC-dK-CtI"/>
+                                                <constraint firstItem="28P-e4-x25" firstAttribute="leading" secondItem="gx7-Oq-Q5N" secondAttribute="leadingMargin" id="pRJ-Ej-zK2"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="28P-e4-x25" secondAttribute="bottom" constant="6" id="xe9-Lb-Cgg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="xjq-Zc-Fnd">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="40" id="48A-VG-ZEJ">
+                                        <rect key="frame" x="0.0" y="141.5" width="414" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="48A-VG-ZEJ" id="Nge-uc-aFd">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpG-Ro-PK3">
+                                                    <rect key="frame" x="16" y="0.0" width="382" height="40"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="13"/>
+                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="追加"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="bpG-Ro-PK3" secondAttribute="bottom" id="NeB-0o-LJj"/>
+                                                <constraint firstAttribute="trailing" secondItem="bpG-Ro-PK3" secondAttribute="trailing" constant="16" id="PG0-LA-bas"/>
+                                                <constraint firstItem="bpG-Ro-PK3" firstAttribute="top" secondItem="Nge-uc-aFd" secondAttribute="top" id="bkY-DC-FMW"/>
+                                                <constraint firstItem="bpG-Ro-PK3" firstAttribute="leading" secondItem="Nge-uc-aFd" secondAttribute="leading" constant="16" id="e8q-nu-6YA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="05f-pd-uF8" id="RNF-tl-jfM"/>
+                            <outlet property="delegate" destination="05f-pd-uF8" id="eaW-wR-bmd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="追加" id="ggj-Kq-ARt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60r-J2-luQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6eA-A6-Jho">
+            <objects>
+                <navigationController id="pMf-1y-kDU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="enN-3Y-0Pn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0Zq-MX-DdG" kind="relationship" relationship="rootViewController" id="1Qu-rJ-a5W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uqj-08-bpv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-825" y="135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="folder" catalog="system" width="64" height="46"/>
+    </resources>
 </document>
