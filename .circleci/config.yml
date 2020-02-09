@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: swift lint
+          name: Install SwiftLint
           command: |
             cd ~
             git clone https://github.com/realm/SwiftLint
@@ -15,5 +15,5 @@ jobs:
             make -j
             cd ~/repo
       - run:
-          name: swift lint
-          command: ~/SwiftLint/.build/x86_64-unknown-linux/release/swiftlint --config ./.swiftlint/swiftlint.yml
+          name: Exec Linter
+          command: ~/SwiftLint/.build/x86_64-unknown-linux/release/swiftlint --strict --config ./.swiftlint/swiftlint.yml
