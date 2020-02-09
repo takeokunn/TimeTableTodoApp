@@ -15,6 +15,7 @@
 		5C2D968423F0080A00352EDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2D968223F0080A00352EDC /* LaunchScreen.storyboard */; };
 		5C2D968F23F0080A00352EDC /* TimeTableTodoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D968E23F0080A00352EDC /* TimeTableTodoAppTests.swift */; };
 		5C2D969A23F0080A00352EDC /* TimeTableTodoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D969923F0080A00352EDC /* TimeTableTodoAppUITests.swift */; };
+		93A05D4391D68E5AFC04A6C6 /* Pods_TimeTableTodoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F0363BD46E2518D5BDADDC /* Pods_TimeTableTodoApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22F0363BD46E2518D5BDADDC /* Pods_TimeTableTodoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeTableTodoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2D967423F0080900352EDC /* TimeTableTodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTableTodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2D967723F0080900352EDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C2D967923F0080900352EDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		5C2D969523F0080A00352EDC /* TimeTableTodoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTableTodoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2D969923F0080A00352EDC /* TimeTableTodoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableTodoAppUITests.swift; sourceTree = "<group>"; };
 		5C2D969B23F0080A00352EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845A265334E96DFA2A0752E4 /* Pods-TimeTableTodoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTableTodoApp.release.xcconfig"; path = "Target Support Files/Pods-TimeTableTodoApp/Pods-TimeTableTodoApp.release.xcconfig"; sourceTree = "<group>"; };
+		A584DD2D6CB61FA6D69D7AB2 /* Pods-TimeTableTodoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTableTodoApp.debug.xcconfig"; path = "Target Support Files/Pods-TimeTableTodoApp/Pods-TimeTableTodoApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A05D4391D68E5AFC04A6C6 /* Pods_TimeTableTodoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,8 @@
 				5C2D968D23F0080A00352EDC /* TimeTableTodoAppTests */,
 				5C2D969823F0080A00352EDC /* TimeTableTodoAppUITests */,
 				5C2D967523F0080900352EDC /* Products */,
+				F34F8A834F0221FB5AE6316A /* Pods */,
+				7274852EB21A1755D696C1CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +135,24 @@
 			path = TimeTableTodoAppUITests;
 			sourceTree = "<group>";
 		};
+		7274852EB21A1755D696C1CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22F0363BD46E2518D5BDADDC /* Pods_TimeTableTodoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F34F8A834F0221FB5AE6316A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A584DD2D6CB61FA6D69D7AB2 /* Pods-TimeTableTodoApp.debug.xcconfig */,
+				845A265334E96DFA2A0752E4 /* Pods-TimeTableTodoApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C2D969E23F0080A00352EDC /* Build configuration list for PBXNativeTarget "TimeTableTodoApp" */;
 			buildPhases = (
+				82A9D2E151D48CC1093F692E /* [CP] Check Pods Manifest.lock */,
 				5C2D967023F0080900352EDC /* Sources */,
 				5C2D967123F0080900352EDC /* Frameworks */,
 				5C2D967223F0080900352EDC /* Resources */,
+				B5EFE70106B261A7FB71F6BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82A9D2E151D48CC1093F692E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeTableTodoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5EFE70106B261A7FB71F6BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeTableTodoApp/Pods-TimeTableTodoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeTableTodoApp/Pods-TimeTableTodoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeTableTodoApp/Pods-TimeTableTodoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5C2D967023F0080900352EDC /* Sources */ = {
@@ -432,6 +501,7 @@
 		};
 		5C2D969F23F0080A00352EDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A584DD2D6CB61FA6D69D7AB2 /* Pods-TimeTableTodoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +519,7 @@
 		};
 		5C2D96A023F0080A00352EDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 845A265334E96DFA2A0752E4 /* Pods-TimeTableTodoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
