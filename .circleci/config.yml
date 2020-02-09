@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: norionomura/docker-swift-updater
+      - image: swift:latest
     working_directory: ~/repo
     steps:
       - checkout
