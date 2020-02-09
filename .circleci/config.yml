@@ -12,6 +12,8 @@ jobs:
             cd ~
             git clone https://github.com/realm/SwiftLint
             cd SwiftLint
-            make
+            make -j
             cd ~/repo
-            ~/SwiftLint/.build/x86_64-unknown-linux/release/swiftlint --config ./.swiftlint/swiftlint.yml
+      - run:
+          name: swift lint
+          command: ~/SwiftLint/.build/x86_64-unknown-linux/release/swiftlint --config ./.swiftlint/swiftlint.yml
