@@ -1,3 +1,13 @@
-github "Alamofire/Alamofire"
-github "SwiftyJSON/SwiftyJSON"
+# ui
+github "SVProgressHUD/SVProgressHUD"
 
+# network
+github "ikesyo/Himotoki"
+github "ishkawa/APIKit"
+
+# utility
+github "kishikawakatsumi/KeychainAccess"
+github "malcommac/SwiftDate"
+
+# logging
+github "CocoaLumberjack/CocoaLumberjack"
