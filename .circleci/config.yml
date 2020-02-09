@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: swift:latest
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          name: Install SwiftLint
+          command: |
+            cd ~
+            git clone https://github.com/realm/SwiftLint
+            cd SwiftLint
+            make -j
+            cd ~/repo
+      - run:
+          name: Exec Linter
+          command: ~/SwiftLint/.build/x86_64-unknown-linux/release/swiftlint --strict --config ./.swiftlint/swiftlint.yml
