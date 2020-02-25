@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="MGk-bT-fiq">
             <objects>
-                <viewController id="5df-hm-qtd" sceneMemberID="viewController">
+                <viewController id="5df-hm-qtd" customClass="LoginViewController" customModule="TimeTableTodoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AdT-Ww-aHT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,6 +24,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgF-u3-svb">
                                 <rect key="frame" x="176" y="732" width="62" height="30"/>
                                 <state key="normal" title="ログイン"/>
+                                <connections>
+                                    <action selector="handleTouchUp:" destination="5df-hm-qtd" eventType="touchUpInside" id="TLi-TE-9q0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -37,6 +40,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0Il-ac-YFD"/>
                     </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="tgF-u3-svb" id="doc-0V-CGz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRs-KA-RdM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
