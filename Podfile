@@ -6,9 +6,6 @@ use_frameworks!
 inhibit_all_warnings!
 
 def install_pods
-  ## network
-  pod 'Result'
-
   # lint
   pod 'SwiftLint'
 end
