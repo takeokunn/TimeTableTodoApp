@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
     private func moveToMainVC() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateInitialViewController()
+        vc!.modalPresentationStyle = .fullScreen
         self.present(vc!, animated: false, completion: nil)
     }
 }
