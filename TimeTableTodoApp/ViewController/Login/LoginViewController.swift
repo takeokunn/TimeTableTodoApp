@@ -19,7 +19,7 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
             print(error.localizedDescription)
@@ -30,12 +30,12 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                        accessToken: authentication.accessToken)
         //Firebase Baas側に認証(初回時はレコードを作成)
-        Auth.auth().signIn(with: credential) { (authResult, error) in
+        Auth.auth().signIn(with: credential) { (_, error) in
             if error != nil {
                 self.handleAlert(title: "認証エラー", message: "認証エラーが発生しました。もう一度お願いします。")
             }
         }
-        Auth.auth().addStateDidChangeListener { (auth, user) in
+        Auth.auth().addStateDidChangeListener { (auth, _) in
             if let currentUser = auth.currentUser {
                 KeychainManager.setEmail(email: currentUser.email!)
                 self.moveToMainVC()
@@ -49,13 +49,13 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
         vc!.modalPresentationStyle = .fullScreen
         self.present(vc!, animated: false, completion: nil)
     }
-    
-    private func createGoogleSigninButton(){
+
+    private func createGoogleSigninButton() {
         let googleButton = GIDSignInButton()
         googleButton.frame = CGRect(x: 20, y: self.view.frame.height/2-30, width: self.view.frame.width-40, height: 60)
         self.view.addSubview(googleButton)
     }
-    
+
     private func handleAlert(title: String, message: String) {
         let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))

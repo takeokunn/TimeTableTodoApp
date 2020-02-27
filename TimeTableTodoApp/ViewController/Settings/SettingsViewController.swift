@@ -18,18 +18,18 @@ class SettingsViewController: UITableViewController {
     }
 
     @IBAction func handleLogout(_ sender: UIButton) {
-        let alert = UIAlertController(title:"確認", message: "ログアウトしますか？", preferredStyle: UIAlertController.Style.alert)
-        let yes = UIAlertAction(title: "はい", style: UIAlertAction.Style.default, handler: { (action: UIAlertAction!) in
+        let alert = UIAlertController(title: "確認", message: "ログアウトしますか？", preferredStyle: UIAlertController.Style.alert)
+        let yes = UIAlertAction(title: "はい", style: UIAlertAction.Style.default, handler: { (_: UIAlertAction!) in
             try? Auth.auth().signOut()
             KeychainManager.logout()
             self.moveToLoginVC()
         })
-        let no = UIAlertAction(title: "いいえ", style: UIAlertAction.Style.cancel, handler: { (action: UIAlertAction!) in })
+        let no = UIAlertAction(title: "いいえ", style: UIAlertAction.Style.cancel, handler: { (_: UIAlertAction!) in })
         alert.addAction(no)
         alert.addAction(yes)
         self.present(alert, animated: true, completion: nil)
     }
-    
+
     private func moveToLoginVC() {
         let storyboard = UIStoryboard(name: "Login", bundle: nil)
         let vc = storyboard.instantiateInitialViewController()

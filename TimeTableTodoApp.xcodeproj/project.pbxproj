@@ -326,6 +326,7 @@
 				5C119C5223F0416200016E89 /* Embed Frameworks */,
 				FEA33D819E167C4B8CB947E9 /* [CP] Embed Pods Frameworks */,
 				5B2D9CF1D1090034D45E5AE8 /* [CP] Copy Pods Resources */,
+				5C21A89E2407FF110081120D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -463,6 +464,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeTableTodoApp/Pods-TimeTableTodoApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5C21A89E2407FF110081120D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect --format \nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		82A9D2E151D48CC1093F692E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
