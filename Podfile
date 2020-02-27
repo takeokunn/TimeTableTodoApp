@@ -6,11 +6,14 @@ use_frameworks!
 inhibit_all_warnings!
 
 def install_pods
-  ## network
-  pod 'Result'
-
   # lint
   pod 'SwiftLint'
+
+  # auth
+  pod 'Firebase'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
 end
 
 target 'TimeTableTodoApp' do

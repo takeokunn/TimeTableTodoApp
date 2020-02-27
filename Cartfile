@@ -2,6 +2,7 @@
 github "SVProgressHUD/SVProgressHUD"
 
 # network
+github "antitypical/Result"
 github "ikesyo/Himotoki"
 github "ishkawa/APIKit"
 

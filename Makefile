@@ -16,3 +16,6 @@ pod_update:
 
 carthage_update:
 	carthage update --platform iOS
+
+fix_lint:
+	swiftlint autocorrect --format

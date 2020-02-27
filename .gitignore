@@ -81,3 +81,5 @@ fastlane/test_output
 
 # direnv
 .envrc
+
+GoogleService-Info.plist

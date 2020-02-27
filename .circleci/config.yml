@@ -16,4 +16,4 @@ jobs:
             cd ~/repo
       - run:
           name: Exec Linter
-          command: ~/SwiftLint/.build/x86_64-unknown-linux/release/swiftlint --strict --config ./.swiftlint/swiftlint.yml
+          command: ~/SwiftLint/.build/x86_64-unknown-linux/release/swiftlint
