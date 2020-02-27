@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,6 +29,7 @@
 		5C2D968423F0080A00352EDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2D968223F0080A00352EDC /* LaunchScreen.storyboard */; };
 		5C2D968F23F0080A00352EDC /* TimeTableTodoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D968E23F0080A00352EDC /* TimeTableTodoAppTests.swift */; };
 		5C2D969A23F0080A00352EDC /* TimeTableTodoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D969923F0080A00352EDC /* TimeTableTodoAppUITests.swift */; };
+		5C44174D2406B75E00EB93C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C44174C2406B75E00EB93C5 /* GoogleService-Info.plist */; };
 		5C5F750E23F038EC000B06BB /* APITokenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F750D23F038EC000B06BB /* APITokenError.swift */; };
 		5C5F751023F0399B000B06BB /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F750F23F0399B000B06BB /* CommonModel.swift */; };
 		5C5F751223F039CE000B06BB /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F751123F039CE000B06BB /* Date+String.swift */; };
@@ -42,6 +43,7 @@
 		5CDDC2462405F441001C40CF /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDDC2452405F441001C40CF /* Result.framework */; };
 		5CDDC2472405F441001C40CF /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDDC2452405F441001C40CF /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5CFF4A002405EDC8002994DF /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF49FF2405EDC8002994DF /* KeychainManager.swift */; };
+		DAC1BCE97B29A7731E8BC28E /* Pods_TimeTableTodoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F0363BD46E2518D5BDADDC /* Pods_TimeTableTodoApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,7 @@
 		5C2D969523F0080A00352EDC /* TimeTableTodoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTableTodoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2D969923F0080A00352EDC /* TimeTableTodoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableTodoAppUITests.swift; sourceTree = "<group>"; };
 		5C2D969B23F0080A00352EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C44174C2406B75E00EB93C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5C5F750D23F038EC000B06BB /* APITokenError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITokenError.swift; sourceTree = "<group>"; };
 		5C5F750F23F0399B000B06BB /* CommonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
 		5C5F751123F039CE000B06BB /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
@@ -134,6 +137,7 @@
 				5C119C6423F0418300016E89 /* KeychainAccess.framework in Frameworks */,
 				5CDDC2462405F441001C40CF /* Result.framework in Frameworks */,
 				5C119C5C23F0418300016E89 /* CocoaLumberjackSwift.framework in Frameworks */,
+				DAC1BCE97B29A7731E8BC28E /* Pods_TimeTableTodoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +191,7 @@
 				5C2D968023F0080A00352EDC /* Assets.xcassets */,
 				5C2D968223F0080A00352EDC /* LaunchScreen.storyboard */,
 				5C2D967D23F0080900352EDC /* Main.storyboard */,
+				5C44174C2406B75E00EB93C5 /* GoogleService-Info.plist */,
 				5C2D968523F0080A00352EDC /* Info.plist */,
 			);
 			path = TimeTableTodoApp;
@@ -319,6 +324,8 @@
 				5C2D967123F0080900352EDC /* Frameworks */,
 				5C2D967223F0080900352EDC /* Resources */,
 				5C119C5223F0416200016E89 /* Embed Frameworks */,
+				FEA33D819E167C4B8CB947E9 /* [CP] Embed Pods Frameworks */,
+				5B2D9CF1D1090034D45E5AE8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -419,6 +426,7 @@
 				5C2D967F23F0080900352EDC /* Main.storyboard in Resources */,
 				5C5F752123F03BE7000B06BB /* Todo.storyboard in Resources */,
 				5C5F751D23F03BC5000B06BB /* Settings.storyboard in Resources */,
+				5C44174D2406B75E00EB93C5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +447,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5B2D9CF1D1090034D45E5AE8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeTableTodoApp/Pods-TimeTableTodoApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeTableTodoApp/Pods-TimeTableTodoApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeTableTodoApp/Pods-TimeTableTodoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		82A9D2E151D48CC1093F692E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -459,6 +484,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEA33D819E167C4B8CB947E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeTableTodoApp/Pods-TimeTableTodoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeTableTodoApp/Pods-TimeTableTodoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeTableTodoApp/Pods-TimeTableTodoApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

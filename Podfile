@@ -8,6 +8,12 @@ inhibit_all_warnings!
 def install_pods
   # lint
   pod 'SwiftLint'
+
+  # auth
+  pod 'Firebase'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
 end
 
 target 'TimeTableTodoApp' do

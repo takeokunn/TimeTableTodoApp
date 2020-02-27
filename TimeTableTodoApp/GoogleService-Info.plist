@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>492296813029-ti0vg9cmepprd3cjrseoo7hpb6phn7l1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.492296813029-ti0vg9cmepprd3cjrseoo7hpb6phn7l1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBDMdXP9YYOHHR7qxolOhUOgNfA_15U178</string>
+	<key>GCM_SENDER_ID</key>
+	<string>492296813029</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.takeokunn.TimeTableTodoApp</string>
+	<key>PROJECT_ID</key>
+	<string>time-table-todo</string>
+	<key>STORAGE_BUCKET</key>
+	<string>time-table-todo.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:492296813029:ios:a63d69d263dcdd7d78d70c</string>
+	<key>DATABASE_URL</key>
+	<string>https://time-table-todo.firebaseio.com</string>
+</dict>
+</plist>
