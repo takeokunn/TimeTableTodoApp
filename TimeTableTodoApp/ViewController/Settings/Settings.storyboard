@@ -29,13 +29,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Noe-Vy-a09">
-                                                    <rect key="frame" x="123" y="17" width="228" height="16"/>
-                                                    <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="13"/>
-                                                    <textInputTraits key="textInputTraits" textContentType="postal-code"/>
-                                                </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メールアドレス" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snp-v0-iX6">
                                                     <rect key="frame" x="16" y="17" width="91" height="15"/>
+                                                    <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="13"/>
+                                                    <color key="textColor" red="0.039215686270000001" green="0.058823529409999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aaa@gmail.com" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jij-M9-kTf">
+                                                    <rect key="frame" x="209" y="18" width="150" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="XeI-3G-2qq"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="13"/>
                                                     <color key="textColor" red="0.039215686270000001" green="0.058823529409999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -43,12 +47,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="snp-v0-iX6" firstAttribute="top" secondItem="83c-U9-YYg" secondAttribute="topMargin" constant="6" id="2UB-3G-jou"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Noe-Vy-a09" secondAttribute="bottom" constant="6" id="G07-tz-bcd"/>
                                                 <constraint firstItem="snp-v0-iX6" firstAttribute="leading" secondItem="83c-U9-YYg" secondAttribute="leadingMargin" id="bt1-6Y-vT9"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="snp-v0-iX6" secondAttribute="bottom" constant="7" id="d1b-Lh-4wQ"/>
-                                                <constraint firstItem="Noe-Vy-a09" firstAttribute="top" secondItem="83c-U9-YYg" secondAttribute="topMargin" constant="6" id="dHW-2Q-HZu"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Noe-Vy-a09" secondAttribute="trailing" constant="8" id="dLx-Gq-6jN"/>
-                                                <constraint firstItem="Noe-Vy-a09" firstAttribute="leading" secondItem="snp-v0-iX6" secondAttribute="trailing" constant="16" id="lTT-bU-3zQ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Jij-M9-kTf" secondAttribute="bottom" constant="6" id="ecQ-jM-ljt"/>
+                                                <constraint firstItem="Jij-M9-kTf" firstAttribute="trailing" secondItem="83c-U9-YYg" secondAttribute="trailingMargin" id="z0X-JO-hCS"/>
+                                                <constraint firstItem="Jij-M9-kTf" firstAttribute="top" secondItem="83c-U9-YYg" secondAttribute="topMargin" constant="7" id="zVh-7O-eG6"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -125,7 +128,7 @@
                                                     <rect key="frame" x="79" y="10" width="217" height="30"/>
                                                     <state key="normal" title="ログアウト"/>
                                                     <connections>
-                                                        <action selector="handleLogout:" destination="Vgg-DY-BYi" eventType="touchUpInside" id="iae-nw-2ms"/>
+                                                        <action selector="handleLogout:" destination="Vgg-DY-BYi" eventType="touchUpInside" id="9Rh-lG-SnS"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -148,6 +151,9 @@
                     <tabBarItem key="tabBarItem" systemItem="more" id="BrU-m1-FPT"/>
                     <navigationItem key="navigationItem" title="設定" id="IGQ-HQ-3A0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="Jij-M9-kTf" id="GZt-2A-3u9"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sYC-UH-r7e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -4,9 +4,12 @@ import Firebase
 
 class SettingsViewController: UITableViewController {
 
+    @IBOutlet weak var emailLabel: UILabel!
+
     override func viewDidLoad () {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.emailLabel.text = KeychainManager.getEmail
     }
 
     override func didReceiveMemoryWarning () {
@@ -14,9 +17,16 @@ class SettingsViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func handleLogout(_ sender: UIButton) {
-        try? Auth.auth().signOut()
-        KeychainManager.logout()
-        self.moveToLoginVC()
+        let alert = UIAlertController(title:"確認", message: "ログアウトしますか？", preferredStyle: UIAlertController.Style.alert)
+        let yes = UIAlertAction(title: "はい", style: UIAlertAction.Style.default, handler: { (action: UIAlertAction!) in
+            try? Auth.auth().signOut()
+            KeychainManager.logout()
+            self.moveToLoginVC()
+        })
+        let no = UIAlertAction(title: "いいえ", style: UIAlertAction.Style.cancel, handler: { (action: UIAlertAction!) in })
+        alert.addAction(no)
+        alert.addAction(yes)
+        self.present(alert, animated: true, completion: nil)
     }
     
     private func moveToLoginVC() {
