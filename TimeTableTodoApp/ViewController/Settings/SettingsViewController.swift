@@ -16,6 +16,7 @@ class SettingsViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
     @IBAction func handleLogout(_ sender: UIButton) {
         let alert = UIAlertController(title:"確認", message: "ログアウトしますか？", preferredStyle: UIAlertController.Style.alert)
         let yes = UIAlertAction(title: "はい", style: UIAlertAction.Style.default, handler: { (action: UIAlertAction!) in

@@ -19,10 +19,6 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func handleTouchUp(_ sender: UIButton) {
-        self.moveToMainVC()
-    }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {

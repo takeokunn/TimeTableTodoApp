@@ -21,28 +21,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgF-u3-svb">
-                                <rect key="frame" x="176" y="732" width="62" height="30"/>
-                                <state key="normal" title="ログイン"/>
-                                <connections>
-                                    <action selector="handleTouchUp:" destination="5df-hm-qtd" eventType="touchUpInside" id="TLi-TE-9q0"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="0Il-ac-YFD" firstAttribute="trailing" secondItem="r74-9L-4Zp" secondAttribute="trailing" constant="79" id="57x-Vm-acg"/>
                             <constraint firstItem="r74-9L-4Zp" firstAttribute="top" secondItem="0Il-ac-YFD" secondAttribute="top" constant="100" id="RVG-m3-tWh"/>
-                            <constraint firstItem="0Il-ac-YFD" firstAttribute="bottom" secondItem="tgF-u3-svb" secondAttribute="bottom" constant="100" id="hBZ-qP-LfH"/>
-                            <constraint firstItem="tgF-u3-svb" firstAttribute="leading" secondItem="0Il-ac-YFD" secondAttribute="leading" constant="176" id="iwH-kR-BTk"/>
-                            <constraint firstItem="0Il-ac-YFD" firstAttribute="trailing" secondItem="tgF-u3-svb" secondAttribute="trailing" constant="176" id="pIb-7k-IXH"/>
                             <constraint firstItem="r74-9L-4Zp" firstAttribute="leading" secondItem="0Il-ac-YFD" secondAttribute="leading" constant="79" id="q6j-rb-vrk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0Il-ac-YFD"/>
                     </view>
-                    <connections>
-                        <outlet property="loginBtn" destination="tgF-u3-svb" id="doc-0V-CGz"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRs-KA-RdM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
